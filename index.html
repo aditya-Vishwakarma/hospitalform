@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hospital Regrestration</title>
+	<meta charset="utf-8">
+ 	 <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 	 <style type="text/css">
+ 	 	body{
+ 	 		background-color:#92a8d1;
+ 	 	}
+ 	 </style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <a class="navbar-brand mx-auto" href="#">Apollo Hospital</a>
+    </div>
+  </div>
+</nav>
+	<div class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form" name="form">
+<fieldset>
+<legend><center><h2><b>Patient Registration Form</b></h2></center></legend><br>
+<div class="form-group">
+  <label class="col-md-4 control-label">Patient Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Last Name</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Are you medically insured?</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Yes
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">No
+    </label>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >DOB</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input class="form-control"  type="date">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Gender</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <label class="radio-inline">
+      <input type="radio" name="optradio" >Male
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Female
+    </label>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Marital Status</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <label class="radio-inline">
+      <input type="radio" name="optradio" >Married
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Single
+    </label>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Age</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="Age" placeholder="Age" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Occupation</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="" placeholder="Occupation" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Permanent Address</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="" placeholder="Address" class="form-control"  type="textarea">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Contact No.</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="contact_no" placeholder="+91" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+  <div class="form-group"> 
+  <label class="col-md-4 control-label">Room Selection</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="department" class="form-control selectpicker">
+      <option>Ward</option>
+      <option>Suit</option>
+      <option>Deluxe</option>
+      <option >Special Room</option>
+      <option >Semi Private</option>
+      <option >General</option>
+      
+    </select>
+  </div>
+</div>
+</div>
+  
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Referred by Dr.</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="Dr" placeholder="Dr." class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Report</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="file">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4"><br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div>
+</body>
+</html>
